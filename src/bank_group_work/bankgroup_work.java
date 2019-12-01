@@ -9,4 +9,10 @@ class Bank {
     public String getName() {
         return bankName;
     }
+
+
+
+
+
+
 }
