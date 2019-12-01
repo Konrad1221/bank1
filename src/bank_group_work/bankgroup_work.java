@@ -1,7 +1,7 @@
 
 package bank_group_work;
         import java.util.List;
-public class Bank {
+class Bank {
     private String bankName;
     public Bank(String bankName) {
         this.bankName = bankName;
