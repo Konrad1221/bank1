@@ -1,7 +1,8 @@
 package bank_group_work;
+import bank.AccountType;
 
 import java.math.BigDecimal;
-public class Account<AccountType> {
+public class Account {
     private String accountNumber;
     private AccountType accountType;
     private BigDecimal balance;
