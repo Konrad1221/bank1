@@ -1,8 +1,7 @@
 package bank_group_work;
-import bank.AccountType;
 
 import java.math.BigDecimal;
-public class Account {
+public class Account<AccountType> {
     private String accountNumber;
     private AccountType accountType;
     private BigDecimal balance;
@@ -25,4 +24,18 @@ public class Account {
     public BigDecimal getBalance() {
         return balance;
     }
+
+public boolean deposit (BigDecimal amount) {
+    this.balance.add (amount);
+    return true;
+}
+
+public boolean withdraw (BigDecimal amount) {
+    if{this.balance.compareTo(amount) >= 0){
+    this.balance = this.balance.subtract(amount);
+    return true;
+    }
+    return false;
+}
+}
 }
